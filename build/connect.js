@@ -51,11 +51,11 @@ function connect(mapStateToProps) {
         this.updateState();
       };
 
-      Connect.prototype.componentDidMount = function componentDidMount() {
+      Connect.prototype.UNSAFE_componentDidMount = function UNSAFE_componentDidMount() {
         this.subscribe(this.props);
       };
 
-      Connect.prototype.componentWillUnmount = function componentWillUnmount() {
+      Connect.prototype.UNSAFE_componentWillUnmount = function UNSAFE_componentWillUnmount() {
         this.unsubscribe();
       };
 
