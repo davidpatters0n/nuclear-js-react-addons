@@ -28,11 +28,11 @@ export default function connect(mapStateToProps) {
         this.updateState()
       }
 
-      componentDidMount() {
+      UNSAFE_componentDidMount() {
         this.subscribe(this.props)
       }
 
-      componentWillUnmount() {
+      UNSAFE_componentWillUnmount() {
         this.unsubscribe()
       }
 
